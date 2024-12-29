@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Intro to HTML DOM</title>
+    <style>
+body {
+    font-family:Arial, sans-serif;
+  background-color:aquamarine;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  color: darkseagreen;
+  transition: all .5s ease;
+  /* smooth transitions for style changes */
+
+}
+button{
+    background-color: darkslategray;
+/* Green */
+color : darkgrey;
+padding: 15px 20px;
+border: none;
+border-radius: 10px;
+font-size: 18 px;
+cursor: pointer;
+transition: all 0.3s ease;
+/*Smoth hover effect */
+}
+
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+    <center>
+        <h1 id="heading">Hello!!</h1>
+        <button onclick="changeText()">Click Me!</button>
+
+        <script>
+            function changeText(){
+
+const heading = document.getElementById("heading");
+heading.innerHTML = "you clicked the button!";
+heading.style.colour ="purple"; //Change heading color
+heading.style.textShadow = "2px 2px 5px gray"; // Add a shadow effect
+body.style.backgroundColor = "red"; // Change the backgound color
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </center>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>
